@@ -3,26 +3,26 @@ namespace Goods
     [Serializable]
     class Set:Item
     {
-        public List<Product> ProductList { get; set; }
+        public List<Item> ItemList { get; set; }
         public Set() : base()
         {
-            this.ProductList = new List<Product>();
+            this.ItemList = new List<Item>();
         }
         public Set(string Name,
                    double Price,
-                   List<Product> ItemList)
+                   List<Item> ItemList)
         :base(Name, Price)
         {
-            this.ProductList = ItemList;
+            this.ItemList = ItemList;
         }
         public override string Info()
         {
-            var Names = from item in ProductList select item.Name;
+            var Names = from item in ItemList select item.Name;
             return $"{Name}, {Price}, {string.Join(", ", Names)}";
         }
         public override bool Expired()
         {
-            foreach(Item item in ProductList)
+            foreach(Item item in ItemList)
             {
                 if (item.Expired()){return true;}
             }
