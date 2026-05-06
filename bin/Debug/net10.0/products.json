@@ -1,0 +1,53 @@
+[
+  {
+    "$type": "product",
+    "ShelfLife": 10,
+    "ProductionDate": "2026-04-20",
+    "Name": "\u041C\u043E\u043B\u043E\u043A\u043E",
+    "Price": 90
+  },
+  {
+    "$type": "product",
+    "ShelfLife": 5,
+    "ProductionDate": "2026-05-01",
+    "Name": "\u0425\u043B\u0435\u0431",
+    "Price": 45
+  },
+  {
+    "$type": "batch",
+    "Quantity": 12,
+    "ProductionDate": "2026-04-15",
+    "ShelfLife": 14,
+    "Name": "\u0419\u043E\u0433\u0443\u0440\u0442",
+    "Price": 70
+  },
+  {
+    "$type": "batch",
+    "Quantity": 6,
+    "ProductionDate": "2026-03-01",
+    "ShelfLife": 90,
+    "Name": "\u041F\u0435\u0447\u0435\u043D\u044C\u0435",
+    "Price": 60
+  },
+  {
+    "$type": "set",
+    "ItemList": [
+      {
+        "$type": "product",
+        "ShelfLife": 180,
+        "ProductionDate": "2026-02-01",
+        "Name": "\u041A\u043E\u0444\u0435",
+        "Price": 150
+      },
+      {
+        "$type": "product",
+        "ShelfLife": 3,
+        "ProductionDate": "2026-05-04",
+        "Name": "\u041A\u0440\u0443\u0430\u0441\u0441\u0430\u043D",
+        "Price": 100
+      }
+    ],
+    "Name": "\u0417\u0430\u0432\u0442\u0440\u0430\u043A",
+    "Price": 250
+  }
+]

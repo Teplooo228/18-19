@@ -1,5 +1,3 @@
-using Microsoft.VisualBasic;
-
 namespace Goods
 {
     class Product:Item
