@@ -6,7 +6,7 @@ namespace Goods
     [JsonDerivedType(typeof(Batch), "batch")]
     [JsonDerivedType(typeof(Set), "set")]
 
-    abstract public class Item:IComparable<Item>
+    abstract public class Item : IComparable<Item>
     {
         public string Name { get; set; }
         private double price;
@@ -30,6 +30,11 @@ namespace Goods
         {
             this.Name = Name;
             this.Price = Price;
+        }
+        protected Item(Item other)
+        {
+            this.Name = other.Name;
+            this.Price = other.Price;
         }
         public int CompareTo(Item item)
         {

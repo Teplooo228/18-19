@@ -1,6 +1,6 @@
 namespace Goods
 {
-        class Set:Item
+    class Set : Item
     {
         public List<Item> ItemList { get; set; }
         public Set() : base()
@@ -10,9 +10,13 @@ namespace Goods
         public Set(string Name,
                    double Price,
                    List<Item> ItemList)
-        :base(Name, Price)
+        : base(Name, Price)
         {
             this.ItemList = ItemList;
+        }
+        public Set(Set other) : base(other)
+        {
+            this.ItemList = other.ItemList;
         }
         public override string ToString()
         {
@@ -21,9 +25,9 @@ namespace Goods
         }
         public override bool Expired()
         {
-            foreach(Item item in ItemList)
+            foreach (Item item in ItemList)
             {
-                if (item.Expired()){return true;}
+                if (item.Expired()) { return true; }
             }
             return false;
         }

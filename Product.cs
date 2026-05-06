@@ -1,19 +1,24 @@
 namespace Goods
 {
-    class Product:Item
+    class Product : Item
     {
         public int ShelfLife { get; set; }
         public DateOnly ProductionDate { get; set; }
-        public Product():base(){}
+        public Product() : base() { }
         public Product(string Name,
                        double Price,
                        DateOnly ProductionDate,
                        int ShelfLife)
-        :base(Name, Price)
+        : base(Name, Price)
         {
             this.ProductionDate = ProductionDate;
             this.ShelfLife = ShelfLife;
 
+        }
+        public Product(Product other) : base(other)
+        {
+            this.ProductionDate = other.ProductionDate;
+            this.ShelfLife = other.ShelfLife;
         }
         public override string ToString()
         {
