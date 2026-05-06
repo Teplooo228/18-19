@@ -1,6 +1,6 @@
 namespace Goods
 {
-    [Serializable]
+    [JsonDerivedType]
     class Set:Item
     {
         public List<Item> ItemList { get; set; }

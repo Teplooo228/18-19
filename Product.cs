@@ -2,7 +2,7 @@ using Microsoft.VisualBasic;
 
 namespace Goods
 {
-    [Serializable]
+    [JsonDerivedType]
     class Product:Item
     {
         public int ShelfLife { get; set; }

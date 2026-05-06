@@ -1,6 +1,6 @@
 namespace Goods
 {
-    [Serializable]
+    [JsonDerivedType]
     abstract public class Item:IComparable<Item>
     {
         public string Name { get; set; }
