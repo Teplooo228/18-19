@@ -18,7 +18,7 @@ namespace Goods
             this.ShelfLife = ShelfLife;
 
         }
-        public override string Info()
+        public override string ToString()
         {
             return $"{Name}, {Price}, {ShelfLife}, {ProductionDate}";
         }

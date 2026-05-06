@@ -15,7 +15,7 @@ namespace Goods
         {
             this.ItemList = ItemList;
         }
-        public override string Info()
+        public override string ToString()
         {
             var Names = from item in ItemList select item.Name;
             return $"{Name}, {Price}, {string.Join(", ", Names)}";
