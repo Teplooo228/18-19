@@ -1,6 +1,11 @@
+using System.Text.Json.Serialization;
+
 namespace Goods
 {
-    [JsonDerivedType]
+    [JsonDerivedType(typeof(Product), "product")]
+    [JsonDerivedType(typeof(Batch), "batch")]
+    [JsonDerivedType(typeof(Set), "set")]
+
     abstract public class Item:IComparable<Item>
     {
         public string Name { get; set; }

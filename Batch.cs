@@ -1,6 +1,5 @@
 namespace Goods
 {
-    [JsonDerivedType]
     class Batch:Item
     {
         public int Quantity { get; set; }

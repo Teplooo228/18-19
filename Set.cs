@@ -1,7 +1,6 @@
 namespace Goods
 {
-    [JsonDerivedType]
-    class Set:Item
+        class Set:Item
     {
         public List<Item> ItemList { get; set; }
         public Set() : base()
