@@ -30,7 +30,6 @@ namespace Goods
         {
             return this.price.CompareTo(item.price);
         }
-        abstract public string Info();
         abstract public bool Expired();
     }
 }
