@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x57DImpDT88=",
+  "dgSpecHash": "lW/KZ1fsAh4=",
   "success": true,
-  "projectFilePath": "/home/teplo/Projects/Test/Test.csproj",
+  "projectFilePath": "/home/teplo/Projects/18-19/Test.csproj",
   "expectedPackageFiles": [
     "/home/teplo/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
   ],

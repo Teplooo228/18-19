@@ -16,7 +16,7 @@ namespace Goods
         }
         public Set(Set other) : base(other)
         {
-            this.ItemList = other.ItemList;
+            this.ItemList = new List<Item>(other.ItemList);
         }
         public override string ToString()
         {

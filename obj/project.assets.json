@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/teplo/Projects/Test/Test.csproj",
+      "projectUniqueName": "/home/teplo/Projects/18-19/Test.csproj",
       "projectName": "Test",
-      "projectPath": "/home/teplo/Projects/Test/Test.csproj",
+      "projectPath": "/home/teplo/Projects/18-19/Test.csproj",
       "packagesPath": "/home/teplo/.nuget/packages/",
-      "outputPath": "/home/teplo/Projects/Test/obj/",
+      "outputPath": "/home/teplo/Projects/18-19/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/teplo/.nuget/NuGet/NuGet.Config"
